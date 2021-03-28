@@ -1,0 +1,21 @@
+@import '../base/typography';
+@import '../components/box';
+@import '../components/button';
+@import '../components/form';
+@import '../components/list';
+@import '../components/section';
+@import '../components/table';
+@import '../components/pagination';
+
+// Mixins.
+
+@mixin color($p) {
+  @include color-typography($p);
+  @include color-box($p);
+  @include color-button($p);
+  @include color-form($p);
+  @include color-list($p);
+  @include color-section($p);
+  @include color-table($p);
+  @include color-pagination($p);
+}

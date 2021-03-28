@@ -1,0 +1,4 @@
+.eslintrc.js
+build/
+src/reportWebVitals.ts
+src/react-app-env.d.ts
