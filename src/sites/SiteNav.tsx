@@ -1,32 +1,43 @@
 import React from "react";
-import mainStyle from "../assets/sass/main.module.scss";
 import { Link } from "react-router-dom";
+import mainStyle from "../assets/sass/main.module.scss";
 import { Social } from "./Social";
+
+export interface SiteNavProperties {
+    link: string;
+    name: string;
+}
+
+export const SiteNavDict: SiteNavProperties[] = [
+    {
+        link: "",
+        name: "Home",
+    },
+    {
+        link: "leistungen",
+        name: "Meine Leistungen",
+    },
+    {
+        link: "kontakt",
+        name: "Kontakt",
+    },
+    {
+        link: "über-mich",
+        name: "Über mich",
+    },
+];
 
 export const SiteNav = (): JSX.Element => {
     return (
         <>
             <ul className={mainStyle.links}>
-                <li>
-                    <Link to="/" className={mainStyle.tablink}>
-                        Home
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/leistungen" className={mainStyle.tablink}>
-                        Meine Leistungen
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/kontakt" className={mainStyle.tablink}>
-                        Kontakt
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/über-mich" className={mainStyle.tablink}>
-                        Über mich
-                    </Link>
-                </li>
+                {SiteNavDict.map((navObject: SiteNavProperties) => (
+                    <li>
+                        <Link to={`/${navObject.link}`} className={mainStyle.tablink}>
+                            {navObject.name}
+                        </Link>
+                    </li>
+                ))}
             </ul>
             <Social />
         </>
