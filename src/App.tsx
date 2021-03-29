@@ -1,18 +1,26 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleDown, faBars } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames";
-import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
-import { AppBar, SwipeableDrawer, Theme, Toolbar, useMediaQuery, useScrollTrigger } from "@material-ui/core";
+import {
+    AppBar,
+    ListItem,
+    ListItemText,
+    SwipeableDrawer,
+    Theme,
+    Toolbar,
+    useMediaQuery,
+    useScrollTrigger,
+} from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
 import { Home } from "./sites/Home";
 import { Generic } from "./sites/Generic";
 import mainStyle from "./assets/sass/main.module.scss";
 import footerStyle from "./assets/sass/layout/footer.module.scss";
 import { Footer } from "./sites/Footer";
-import { SiteNav } from "./sites/SiteNav";
+import { SiteNav, SiteNavDict, SiteNavProperties } from "./sites/SiteNav";
 
 export function App(): JSX.Element {
     const trigger = useScrollTrigger({
@@ -106,24 +114,28 @@ export function App(): JSX.Element {
                         </div>
                     </div>
                     <SwipeableDrawer
-                        onClose={() => setDrawerOpen(false)}
                         onOpen={() => setDrawerOpen(true)}
+                        anchor="right"
+                        variant="temporary"
+                        onClose={() => setDrawerOpen(false)}
                         open={drawerOpen}
                     >
-                        <div id={mainStyle.navPanel}>
-                            <nav>
-                                <SiteNav />
-                            </nav>
+                        <div className={mainStyle.navPanel}>
+                            {SiteNavDict.map((navObject: SiteNavProperties) => (
+                                <ListItem button key={`${navObject.link}_mobile`} className={mainStyle.linksNavPanel}>
+                                    <ListItemText primary={navObject.name} />
+                                </ListItem>
+                            ))}
                             <div
                                 onClick={() => setDrawerOpen(!drawerOpen)}
                                 role="button"
                                 tabIndex={0}
                                 onKeyPress={(event) => {
                                     if (event.code === "ENTER") {
-                                        setDrawerOpen(!drawerOpen);
+                                        setDrawerOpen(false);
                                     }
                                 }}
-                                className={mainStyle.close}
+                                className={mainStyle.closeNavPanel}
                             >
                                 <CloseIcon />
                             </div>
