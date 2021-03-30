@@ -32,10 +32,8 @@ export const SiteNav = (): JSX.Element => {
         <>
             <ul className={mainStyle.links}>
                 {SiteNavDict.map((navObject: SiteNavProperties) => (
-                    <li>
-                        <Link to={`/${navObject.link}`} className={mainStyle.tablink}>
-                            {navObject.name}
-                        </Link>
+                    <li key={navObject.link}>
+                        <Link to={`/${navObject.link}`}>{navObject.name}</Link>
                     </li>
                 ))}
             </ul>
