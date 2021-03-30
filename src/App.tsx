@@ -4,17 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleDown, faBars } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames";
 import CloseIcon from "@material-ui/icons/Close";
-import {
-    AppBar,
-    ListItem,
-    ListItemText,
-    SwipeableDrawer,
-    Theme,
-    Toolbar,
-    useMediaQuery,
-    useScrollTrigger,
-} from "@material-ui/core";
+import { ListItem, ListItemText, SwipeableDrawer, Theme, useMediaQuery, useScrollTrigger } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
+import { Element, Link as ScrollLink } from "react-scroll/modules";
 import { Home } from "./sites/Home";
 import { Generic } from "./sites/Generic";
 import mainStyle from "./assets/sass/main.module.scss";
@@ -27,7 +19,7 @@ export function App(): JSX.Element {
         threshold: window.innerHeight - 4 * Number.parseFloat(getComputedStyle(document.documentElement).fontSize),
     });
     const theme: Theme = useTheme();
-    const largerMedium = useMediaQuery(theme.breakpoints.up("large"));
+    const largerMedium = useMediaQuery(theme.breakpoints.up("md"));
 
     const [drawerOpen, setDrawerOpen] = useState(false);
     useEffect(() => console.log(largerMedium), [largerMedium]);
@@ -36,7 +28,11 @@ export function App(): JSX.Element {
         <BrowserRouter>
             <Switch>
                 <>
-                    <div className={mainStyle.fadeIn} id={mainStyle.wrapper}>
+                    <div
+                        className={classNames({ [mainStyle.fadeIn]: true, [mainStyle.bg]: true })}
+                        id={mainStyle.wrapper}
+                    >
+                        <div className={mainStyle.bg} />
                         <div id={mainStyle.intro}>
                             <h1>Für Erfolg gemacht</h1>
                             <p>
@@ -50,15 +46,18 @@ export function App(): JSX.Element {
                             </p>
                             <ul className={mainStyle.actions}>
                                 <li>
-                                    <a
-                                        href={`#${mainStyle.header}`}
+                                    <ScrollLink
+                                        to="content"
+                                        spy
+                                        smooth
+                                        duration={750}
                                         className={classNames({
                                             [mainStyle.icon]: true,
                                             [mainStyle.solo]: true,
                                         })}
                                     >
                                         <FontAwesomeIcon icon={faArrowCircleDown} size="4x" />
-                                    </a>
+                                    </ScrollLink>
                                 </li>
                             </ul>
                         </div>
@@ -68,27 +67,23 @@ export function App(): JSX.Element {
                             </a>
                         </header>
                         {trigger && largerMedium && (
-                            <AppBar style={{ height: "4rem", background: "rgba(33, 41, 49, 1)" }}>
-                                <Toolbar>
-                                    <div id={mainStyle.fixedNav}>
-                                        <SiteNav />
-                                    </div>
-                                </Toolbar>
-                            </AppBar>
+                            <div id={mainStyle.fixedNav}>
+                                <SiteNav />
+                            </div>
                         )}
                         {!trigger && (
                             <nav id={mainStyle.nav}>
                                 <SiteNav />
                             </nav>
                         )}
-                        <div id={mainStyle.main}>
+                        <Element id={mainStyle.main} name="content">
                             <Route path="/generic">
                                 <Generic />
                             </Route>
                             <Route path="/">
                                 <Home />
                             </Route>
-                        </div>
+                        </Element>
                         <Footer />
                         <div id={footerStyle.copyright}>
                             <ul>
