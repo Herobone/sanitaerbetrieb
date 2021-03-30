@@ -5,13 +5,11 @@
 /// Breakpoints.
 /// @var {list}
 $breakpoints: ((
-        default: (1681px, null),
-        xlarge: (1281px, 1680px),
-        large: (981px, 1280px),
-        medium: (737px, 980px),
-        small: (481px, 736px),
-        xsmall: (361px, 480px),
-        xxsmall: (null, 360px)
+        xl: (1920px, null),
+        lg: (1281px, 1919px),
+        md: (961px, 1280px),
+        sm: (601px, 960px),
+        xs: (null, 600px)
 ));
 
 // Mixins.

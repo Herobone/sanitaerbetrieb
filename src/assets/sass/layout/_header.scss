@@ -52,12 +52,12 @@
     }
   }
 
-  @include breakpoint('<=medium') {
+  @include breakpoint('<=md') {
     height: 14rem;
     padding-bottom: (_size(padding) * 2);
   }
 
-  @include breakpoint('<=small') {
+  @include breakpoint('<=sm') {
     padding-bottom: (_size(padding) * 1.5);
 
     .logo {

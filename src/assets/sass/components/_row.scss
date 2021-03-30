@@ -5,31 +5,29 @@
 ///
 
 /* Row */
+@import "../libs/breakpoints";
+@import "../libs/html-grid";
 
-	.row {
-		@include html-grid(1.5rem);
+.row {
+  @include html-grid(1.5rem);
 
-		@include breakpoint('<=xlarge') {
-			@include html-grid(1.5rem, 'xlarge');
-		}
+  @include breakpoint('<=xl') {
+    @include html-grid(1.5rem, 'xl');
+  }
 
-		@include breakpoint('<=large') {
-			@include html-grid(1.5rem, 'large');
-		}
+  @include breakpoint('<=lg') {
+    @include html-grid(1.5rem, 'lg');
+  }
 
-		@include breakpoint('<=medium') {
-			@include html-grid(1.5rem, 'medium');
-		}
+  @include breakpoint('<=md') {
+    @include html-grid(1.5rem, 'md');
+  }
 
-		@include breakpoint('<=small') {
-			@include html-grid(1.5rem, 'small');
-		}
+  @include breakpoint('<=sm') {
+    @include html-grid(1.5rem, 'sm');
+  }
 
-		@include breakpoint('<=xsmall') {
-			@include html-grid(1.5rem, 'xsmall');
-		}
-
-		@include breakpoint('<=xxsmall') {
-			@include html-grid(1.5rem, 'xxsmall');
-		}
-	}
+  @include breakpoint('<=xs') {
+    @include html-grid(1.5rem, 'xs');
+  }
+}

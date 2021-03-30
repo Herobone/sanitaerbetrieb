@@ -1,4 +1,6 @@
 @import "../libs/breakpoints";
+@import "../libs/vendor";
+@import "../libs/color";
 
 ///
 /// Massively by HTML5 UP
@@ -19,7 +21,7 @@ body {
 }
 
 // Ensures page width is always >=320px.
-@include breakpoint('<=xsmall') {
+@include breakpoint('<=sm') {
   html, body {
     min-width: 320px;
   }
