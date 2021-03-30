@@ -25,7 +25,7 @@ export function App(): JSX.Element {
     useEffect(() => console.log(largerMedium), [largerMedium]);
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Switch>
                 <>
                     <div
