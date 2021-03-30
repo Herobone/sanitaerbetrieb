@@ -39,6 +39,11 @@ const useStyles = makeStyles((theme: Theme) => ({
         justifyContent: "center",
         justifyItems: "center",
     },
+    divider: {
+        padding: 0,
+        margin: 0,
+        marginBottom: theme.spacing(2),
+    },
 }));
 
 const DescriptionCardOne = (): JSX.Element => {
@@ -51,7 +56,7 @@ const DescriptionCardOne = (): JSX.Element => {
                     <Typography gutterBottom variant="h5" component="h2">
                         Mein Projekt
                     </Typography>
-                    <hr />
+                    <hr className={classes.divider} />
                     <Typography>
                         Ich habe immer ein Projekt, an dem ich arbeite. Meistens für meine Kunden. Von Zeit zu Zeit ist
                         es aber auch ein persönliches Vorhaben, das mich neue Inspiration gewinnen lässt.
@@ -71,7 +76,7 @@ const DescriptionCardTwo = (): JSX.Element => {
                     <Typography gutterBottom variant="h5" component="h2">
                         Meine Kunden
                     </Typography>
-                    <hr />
+                    <hr className={classes.divider} />
                     <Typography>
                         Ich bin erfahren, verlässlich sowie jederzeit auf gute Ergebnisse fokussiert und weiß es zu
                         schätzen, mit großartigen Kunden zusammenzuarbeiten.
@@ -91,7 +96,7 @@ const DescriptionCardThree = (): JSX.Element => {
                     <Typography gutterBottom variant="h5" component="h2">
                         Meine Motivation
                     </Typography>
-                    <hr />
+                    <hr className={classes.divider} />
                     <Typography>
                         Meine Arbeit ist meine Leidenschaft und ein positiver Antrieb für jeden Tag. Sie bringt mich
                         dazu, an jeder neuen Herausforderung zu wachsen und so neue Ziele zu erreichen.
@@ -123,6 +128,7 @@ export const Home = (): JSX.Element => {
                         <Card className={classes.card} elevation={0}>
                             <CardMedia className={classes.portraitMedia} image={portrait} title="Matthias Junge" />
                             <CardContent className={classes.cardContent}>
+                                <hr className={classes.divider} />
                                 <Typography>
                                     Ich liebe meine Arbeit, daraus mache ich kein Geheimnis. Und was mich wirklich
                                     glücklich macht, ist, wenn die Kunden sich über das Ergebnis meiner Arbeit freuen.
