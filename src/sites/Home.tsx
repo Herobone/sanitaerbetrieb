@@ -1,18 +1,7 @@
 import React from "react";
 
 import "../assets/sass/main.module.scss";
-import {
-    Box,
-    Button,
-    Card,
-    CardActions,
-    CardContent,
-    CardMedia,
-    Container,
-    Grid,
-    Theme,
-    Typography,
-} from "@material-ui/core";
+import { Box, Card, CardContent, CardMedia, Container, Grid, Theme, Typography } from "@material-ui/core";
 
 import { makeStyles } from "@material-ui/styles";
 import faucet from "../images/unsplash-faucet.jpg";
@@ -135,9 +124,8 @@ export const Home = (): JSX.Element => {
                             <CardMedia className={classes.portraitMedia} image={portrait} title="Matthias Junge" />
                             <CardContent className={classes.cardContent}>
                                 <Typography>
-                                    Meine Arbeit ist meine Leidenschaft und ein positiver Antrieb für jeden Tag. Sie
-                                    bringt mich dazu, an jeder neuen Herausforderung zu wachsen und so neue Ziele zu
-                                    erreichen.
+                                    Ich liebe meine Arbeit, daraus mache ich kein Geheimnis. Und was mich wirklich
+                                    glücklich macht, ist, wenn die Kunden sich über das Ergebnis meiner Arbeit freuen.
                                 </Typography>
                             </CardContent>
                         </Card>
