@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5e28f78c.chunk.css",
+    "main.js": "/static/js/main.21711207.chunk.js",
+    "main.js.map": "/static/js/main.21711207.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.612b2a46.js",
+    "runtime-main.js.map": "/static/js/runtime-main.612b2a46.js.map",
+    "static/js/2.d13c994a.chunk.js": "/static/js/2.d13c994a.chunk.js",
+    "static/js/2.d13c994a.chunk.js.map": "/static/js/2.d13c994a.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.5e28f78c.chunk.css.map": "/static/css/main.5e28f78c.chunk.css.map",
+    "static/js/2.d13c994a.chunk.js.LICENSE.txt": "/static/js/2.d13c994a.chunk.js.LICENSE.txt",
+    "static/media/bad.e3a8e9dd.webp": "/static/media/bad.e3a8e9dd.webp",
+    "static/media/main.module.scss": "/static/media/unsplash-bathroom.cdc9eb52.jpg",
+    "static/media/grinder.74a78b51.webp": "/static/media/grinder.74a78b51.webp",
+    "static/media/portrait.422f2c25.webp": "/static/media/portrait.422f2c25.webp",
+    "static/media/spuelkasten.d7d23a74.webp": "/static/media/spuelkasten.d7d23a74.webp",
+    "static/media/unsplash-faucet.23b456e1.jpg": "/static/media/unsplash-faucet.23b456e1.jpg",
+    "static/media/wasserhahn.b3727459.webp": "/static/media/wasserhahn.b3727459.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.612b2a46.js",
+    "static/js/2.d13c994a.chunk.js",
+    "static/css/main.5e28f78c.chunk.css",
+    "static/js/main.21711207.chunk.js"
+  ]
+}
