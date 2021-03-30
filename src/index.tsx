@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { MuiThemeProvider } from "@material-ui/core";
 import { App } from "./App";
 import "./assets/sass/main.module.scss";
-import { MuiThemeProvider } from "@material-ui/core";
 import { defaultTheme } from "./Theme";
 
 ReactDOM.render(

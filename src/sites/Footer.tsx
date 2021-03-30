@@ -5,8 +5,6 @@ import classNames from "classnames";
 import mainStyle from "../assets/sass/main.module.scss";
 
 import footerStyle from "../assets/sass/layout/footer.module.scss";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Social } from "./Social";
 
 export const Footer = (): JSX.Element => {
