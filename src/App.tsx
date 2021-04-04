@@ -11,8 +11,8 @@ import { Home } from "./sites/Home";
 import { Generic } from "./sites/Generic";
 import mainStyle from "./assets/sass/main.module.scss";
 import footerStyle from "./assets/sass/layout/footer.module.scss";
-import { Footer } from "./sites/Footer";
-import { SiteNav, SiteNavDict, SiteNavProperties } from "./sites/SiteNav";
+import { Footer } from "./parts/Footer";
+import { SiteNav, SiteNavDict, SiteNavProperties } from "./parts/SiteNav";
 
 export function App(): JSX.Element {
     const trigger = useScrollTrigger({
