@@ -6,7 +6,7 @@ import { Box, Card, CardContent, CardMedia, Container, Grid, Theme, Typography }
 import { makeStyles } from "@material-ui/styles";
 import faucet from "../images/unsplash-faucet.jpg";
 import grinder from "../images/grinder.webp";
-import spuelkasten from "../images/spuelkasten.webp";
+import toilette from "../images/unsplash-toilet.jpg";
 import portrait from "../images/portrait.webp";
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -33,6 +33,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     cardContent: {
         flexGrow: 1,
     },
+    cardText: {
+        minHeight: "13vh",
+    },
     center: {
         alignContent: "center",
         alignItems: "center",
@@ -57,7 +60,7 @@ const DescriptionCardOne = (): JSX.Element => {
                         Mein Projekt
                     </Typography>
                     <hr className={classes.divider} />
-                    <Typography>
+                    <Typography className={classes.cardText}>
                         Ich habe immer ein Projekt, an dem ich arbeite. Meistens für meine Kunden. Von Zeit zu Zeit ist
                         es aber auch ein persönliches Vorhaben, das mich neue Inspiration gewinnen lässt.
                     </Typography>
@@ -71,13 +74,13 @@ const DescriptionCardTwo = (): JSX.Element => {
     return (
         <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.card}>
-                <CardMedia className={classes.cardMedia} image={spuelkasten} title="Spühlkasten" />
+                <CardMedia className={classes.cardMedia} image={toilette} title="Spühlkasten" />
                 <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
                         Meine Kunden
                     </Typography>
                     <hr className={classes.divider} />
-                    <Typography>
+                    <Typography className={classes.cardText}>
                         Ich bin erfahren, verlässlich sowie jederzeit auf gute Ergebnisse fokussiert und weiß es zu
                         schätzen, mit großartigen Kunden zusammenzuarbeiten.
                     </Typography>
@@ -97,7 +100,7 @@ const DescriptionCardThree = (): JSX.Element => {
                         Meine Motivation
                     </Typography>
                     <hr className={classes.divider} />
-                    <Typography>
+                    <Typography className={classes.cardText}>
                         Meine Arbeit ist meine Leidenschaft und ein positiver Antrieb für jeden Tag. Sie bringt mich
                         dazu, an jeder neuen Herausforderung zu wachsen und so neue Ziele zu erreichen.
                     </Typography>
