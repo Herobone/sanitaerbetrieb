@@ -12,6 +12,7 @@ import { Generic } from "./sites/Generic";
 import mainStyle from "./assets/sass/main.module.scss";
 import footerStyle from "./assets/sass/layout/footer.module.scss";
 import { Footer } from "./parts/Footer";
+import { Leistungen } from "./sites/Leistungen";
 import { SiteNav, SiteNavDict, SiteNavProperties } from "./parts/SiteNav";
 
 export function App(): JSX.Element {
@@ -79,6 +80,9 @@ export function App(): JSX.Element {
                         <Element id={mainStyle.main} name="content">
                             <Route path="/generic">
                                 <Generic />
+                            </Route>
+                            <Route path="/leistungen">
+                                <Leistungen />
                             </Route>
                             <Route path="/">
                                 <Home />
