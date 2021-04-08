@@ -58,7 +58,7 @@
   font-size: 0.9rem;
   font-weight: _font(weight-heading);
   letter-spacing: 0.075em;
-  padding: 0.5rem 0;
+  //padding: 0.5rem 0;
   text-transform: uppercase;
 
   &:first-child {
@@ -92,6 +92,7 @@
     height: 4rem;
     line-height: 4rem;
   }
+
 }
 
 .navPanel {
