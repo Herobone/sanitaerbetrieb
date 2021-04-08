@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/sanitaerbetrieb/static/css/main.aee6bc65.chunk.css",
-    "main.js": "/sanitaerbetrieb/static/js/main.058e66af.chunk.js",
-    "main.js.map": "/sanitaerbetrieb/static/js/main.058e66af.chunk.js.map",
+    "main.css": "/sanitaerbetrieb/static/css/main.8830b51a.chunk.css",
+    "main.js": "/sanitaerbetrieb/static/js/main.bff14126.chunk.js",
+    "main.js.map": "/sanitaerbetrieb/static/js/main.bff14126.chunk.js.map",
     "runtime-main.js": "/sanitaerbetrieb/static/js/runtime-main.632d34fd.js",
     "runtime-main.js.map": "/sanitaerbetrieb/static/js/runtime-main.632d34fd.js.map",
-    "static/js/2.d13c994a.chunk.js": "/sanitaerbetrieb/static/js/2.d13c994a.chunk.js",
-    "static/js/2.d13c994a.chunk.js.map": "/sanitaerbetrieb/static/js/2.d13c994a.chunk.js.map",
+    "static/js/2.741a0ee0.chunk.js": "/sanitaerbetrieb/static/js/2.741a0ee0.chunk.js",
+    "static/js/2.741a0ee0.chunk.js.map": "/sanitaerbetrieb/static/js/2.741a0ee0.chunk.js.map",
     "index.html": "/sanitaerbetrieb/index.html",
-    "static/css/main.aee6bc65.chunk.css.map": "/sanitaerbetrieb/static/css/main.aee6bc65.chunk.css.map",
-    "static/js/2.d13c994a.chunk.js.LICENSE.txt": "/sanitaerbetrieb/static/js/2.d13c994a.chunk.js.LICENSE.txt",
-    "static/media/bad.e3a8e9dd.webp": "/sanitaerbetrieb/static/media/bad.e3a8e9dd.webp",
+    "static/css/main.8830b51a.chunk.css.map": "/sanitaerbetrieb/static/css/main.8830b51a.chunk.css.map",
+    "static/js/2.741a0ee0.chunk.js.LICENSE.txt": "/sanitaerbetrieb/static/js/2.741a0ee0.chunk.js.LICENSE.txt",
     "static/media/main.module.scss": "/sanitaerbetrieb/static/media/unsplash-bathroom.cdc9eb52.jpg",
     "static/media/grinder.74a78b51.webp": "/sanitaerbetrieb/static/media/grinder.74a78b51.webp",
     "static/media/portrait.422f2c25.webp": "/sanitaerbetrieb/static/media/portrait.422f2c25.webp",
     "static/media/spuelkasten.d7d23a74.webp": "/sanitaerbetrieb/static/media/spuelkasten.d7d23a74.webp",
+    "static/media/toilette.c8f7dec4.webp": "/sanitaerbetrieb/static/media/toilette.c8f7dec4.webp",
+    "static/media/trockenlegung.23b35677.webp": "/sanitaerbetrieb/static/media/trockenlegung.23b35677.webp",
     "static/media/unsplash-faucet.23b456e1.jpg": "/sanitaerbetrieb/static/media/unsplash-faucet.23b456e1.jpg",
-    "static/media/wasserhahn.b3727459.webp": "/sanitaerbetrieb/static/media/wasserhahn.b3727459.webp"
+    "static/media/unsplash-phone.e3e1e63f.jpg": "/sanitaerbetrieb/static/media/unsplash-phone.e3e1e63f.jpg",
+    "static/media/unsplash-toilet.f319d401.jpg": "/sanitaerbetrieb/static/media/unsplash-toilet.f319d401.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.632d34fd.js",
-    "static/js/2.d13c994a.chunk.js",
-    "static/css/main.aee6bc65.chunk.css",
-    "static/js/main.058e66af.chunk.js"
+    "static/js/2.741a0ee0.chunk.js",
+    "static/css/main.8830b51a.chunk.css",
+    "static/js/main.bff14126.chunk.js"
   ]
 }
