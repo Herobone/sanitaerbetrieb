@@ -8,7 +8,6 @@ import { ListItem, ListItemText, SwipeableDrawer, Theme, useMediaQuery, useScrol
 import { useTheme } from "@material-ui/styles";
 import { Element, Link as ScrollLink } from "react-scroll/modules";
 import { Home } from "./sites/Home";
-import { Generic } from "./sites/Generic";
 import mainStyle from "./assets/sass/main.module.scss";
 import footerStyle from "./assets/sass/layout/footer.module.scss";
 import { Footer } from "./parts/Footer";
@@ -33,14 +32,12 @@ export function App(): JSX.Element {
                 <div className={classNames({ [mainStyle.fadeIn]: true, [mainStyle.bg]: true })} id={mainStyle.wrapper}>
                     <div className={mainStyle.bg} />
                     <div id={mainStyle.intro}>
-                        <h1>Für Erfolg gemacht</h1>
+                        <h1>Für den Erfolg gemacht</h1>
                         <p>
-                            Mein Unternehmen bieten ein umfangreiches Angebot an Serviceleistungen in allen bereichen
-                            der modernen Sanitärtechnik.
-                            <br />
+                            Mein Unternehmen bietet ein umfangreiches Angebot an Serviceleistungen in allen Bereichen
+                            der modernen Sanitärtechnik. <br />
                             Eine gute Handwerksarbeit kann man nicht im Internet bestellen. Sie sollte beständig und
-                            zuverlässig sein und dabei das Leben leichter machen.
-                            <br />
+                            zuverlässig sein und dabei das Leben leichter machen. <br />
                             Meine Arbeiten erfüllen diesen Anspruch.
                         </p>
                         <ul className={mainStyle.actions}>
@@ -77,9 +74,6 @@ export function App(): JSX.Element {
                     )}
                     <Element id={mainStyle.main} name="content">
                         <Switch>
-                            <Route path="/generic">
-                                <Generic />
-                            </Route>
                             <Route path="/leistungen">
                                 <Leistungen />
                             </Route>
@@ -97,9 +91,18 @@ export function App(): JSX.Element {
                     <Footer />
                     <div id={footerStyle.copyright}>
                         <ul>
-                            <li>&copy; Matthias unter CCA 3.0</li>
+                            <li>
+                                &copy; Matthias Junge unter{" "}
+                                <a href="https://creativecommons.org/licenses/by/3.0/de">CCA 3.0</a>
+                            </li>
                             <li>
                                 Design: <a href="https://html5up.net">HTML5 UP</a>
+                            </li>
+                            <li>
+                                Erstellt von{" "}
+                                <a href="https://github.com/Herobone/">
+                                    <b>Julius Gesang</b>
+                                </a>
                             </li>
                         </ul>
                     </div>

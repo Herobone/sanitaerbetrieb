@@ -13,7 +13,7 @@ export const Leistungen = (): JSX.Element => {
             <Container maxWidth={false}>
                 <h2>Meine Leistungen</h2>
                 <Grid container spacing={4} className={classes.cardGrid}>
-                    <CustomCard heading="Sanitär Kundendienst" image={toilette} height={13}>
+                    <CustomCard heading="Sanitär-Kundendienst" image={toilette} height={13}>
                         <ul>
                             <li>Reparatur an Rohrleitungen</li>
                             <li>

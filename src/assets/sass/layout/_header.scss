@@ -11,6 +11,12 @@
 
 /* Header */
 
+.logo {
+  font-family: _font(family-heading), sans-serif;
+  font-size: 2rem;
+  font-weight: _font(weight-heading);
+}
+
 #header {
   @include color-typography(invert);
   @include vendor('align-items', 'center');
