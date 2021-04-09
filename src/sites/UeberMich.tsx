@@ -32,7 +32,7 @@ export const UeberMich = (): JSX.Element => {
                         </Hidden>
                         <Hidden mdUp>
                             <Box display="flex" justifyContent="center">
-                                <img src={portrait} alt="Kontakt" style={{ maxWidth: "50%" }} />
+                                <img src={portrait} alt="Kontakt" style={{ width: "50%", height: "50%" }} />
                             </Box>
                         </Hidden>
                     </Grid>
